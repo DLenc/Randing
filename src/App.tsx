@@ -1,12 +1,7 @@
-import Test from './page/youTube/test';
 import styled from 'styled-components';
 
 function App() {
-  return (
-    <Container>
-      <Test />
-    </Container>
-  );
+  return <Container>App</Container>;
 }
 
 const Container = styled.div`
