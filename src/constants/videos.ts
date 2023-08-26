@@ -1,6 +1,6 @@
 interface VideoProps {
   title: string;
-  videoId: string; // 오타 수정: vedioId -> videoId
+  videoId: string;
 }
 
 const Videos: VideoProps[] = [
