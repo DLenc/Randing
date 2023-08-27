@@ -1,7 +1,12 @@
 import styled from 'styled-components';
+import YoutubeBox from './page/youTube/youTube';
 
 function App() {
-  return <Container>App</Container>;
+  return (
+    <Container>
+      <YoutubeBox />
+    </Container>
+  );
 }
 
 const Container = styled.div`
