@@ -1,16 +1,12 @@
 import styled from 'styled-components';
-
 import ReviewList from './page/review/review';
-
 import YoutubeBox from './page/youTube/youTube';
 
 function App() {
   return (
     <Container>
       <YoutubeBox />
-
       <ReviewList />
-
     </Container>
   );
 }

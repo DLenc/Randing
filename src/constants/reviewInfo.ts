@@ -1,4 +1,4 @@
-interface reviewProps {
+export interface reviewProps {
   key?: number;
   index?: string;
   title?: string;
@@ -28,6 +28,7 @@ const Review: reviewProps[] = [
       '층간소음은 명확하고 객관적인 데이터가 없어, 개인적인 감정싸움으로 번지기 쉽다. 이를 고려한 DL 이앤씨는 D-Silence Service를 개발해다. 이를 통해 자신이 특정 기준을 초과해 송므을 발생시켰다는 점을 인지하여, 경각심으로 아파트 내 층간 소음이 줄어들게 되며, 결과적으로 사회 문제까지 해결할 수 있는 기술이라고 해도 과언이 아니라고 생각한다.'
   },
   {
+    key: 3,
     index: '04',
     title: 'DL이앤씨, 고객의 목소리에 주목',
     content:
