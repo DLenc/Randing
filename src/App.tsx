@@ -10,10 +10,10 @@ function App() {
   return (
     <Container>
       <Cover />
+      <ReviewList />
       <Info1 />
       <Banner1 />
       <Info2 />
-      <ReviewList />
       <YoutubeBox />
     </Container>
   );
