@@ -6,6 +6,7 @@ interface CardProps {
   index?: string;
   title?: string;
   content?: string;
+  Image?: string;
 }
 
 const Card = (props: CardProps) => {
@@ -22,12 +23,7 @@ const Card = (props: CardProps) => {
         </Img>
       </Front>
       <Back>
-        <img
-          src='./Image/cardImage1.png'
-          alt='CardImage'
-          width={525}
-          height={676}
-        />
+        <img src={props.Image} alt='CardImage' width={525} height={676} />
       </Back>
     </Container>
   );
