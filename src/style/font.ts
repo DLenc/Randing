@@ -15,6 +15,13 @@ const Title2: CSSProperties = {
   lineHeight: 'normal'
 };
 
+const Title3: CSSProperties = {
+  color: Color.dlNavy,
+  fontSize: '36.5px',
+  fontWeight: 500,
+  lineHeight: 'normal'
+};
+
 const Sub: CSSProperties = {
   color: Color.subText,
   fontSize: '31.651px',
@@ -22,10 +29,27 @@ const Sub: CSSProperties = {
   lineHeight: 'normal'
 };
 
+const Content: CSSProperties = {
+  color: Color.subText,
+  fontSize: '24px',
+  fontWeight: 500,
+  lineHeight: 'normal'
+};
+
+const SubContent: CSSProperties = {
+  color: 'white',
+  fontSize: '24px',
+  fontWeight: 500,
+  lineHeight: 'normal'
+};
+
 const FONT = {
   Title1,
   Title2,
-  Sub
+  Title3,
+  Sub,
+  Content,
+  SubContent
 };
 
 export default FONT;
