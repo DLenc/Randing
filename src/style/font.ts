@@ -51,6 +51,30 @@ const Description: CSSProperties = {
   fontFamily: 'Pretendard'
 };
 
+const Alert1: CSSProperties = {
+  color: 'white',
+  fontSize: '35.168px',
+  fontWeight: 600,
+  lineHeight: 'normal',
+  fontFamily: 'Pretendard'
+};
+
+const Alert2: CSSProperties = {
+  color: 'white',
+  fontSize: '28.134px',
+  fontWeight: 400,
+  lineHeight: 'normal',
+  fontFamily: 'Pretendard'
+};
+
+const Alert3: CSSProperties = {
+  color: Color.dlNavy,
+  fontSize: '23.738px',
+  fontWeight: 400,
+  lineHeight: 'normal',
+  fontFamily: 'Pretendard'
+};
+
 const FONT = {
   Title1,
   Title2,
@@ -58,7 +82,10 @@ const FONT = {
   Sub,
   Content,
   SubContent,
-  Description
+  Description,
+  Alert1,
+  Alert2,
+  Alert3
 };
 
 export default FONT;
