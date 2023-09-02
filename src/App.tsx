@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import Banner from './page/Banner/banner1';
+import Banner1 from './page/Banner/banner';
+import Cover from './page/cover';
 import Info1 from './page/Info/Info1';
 import Info2 from './page/Info/Info3';
 import ReviewList from './page/review/review';
@@ -8,8 +9,9 @@ import YoutubeBox from './page/youTube/youTube';
 function App() {
   return (
     <Container>
-      <Banner />
+      <Cover />
       <Info1 />
+      <Banner1 />
       <Info2 />
       <ReviewList />
       <YoutubeBox />

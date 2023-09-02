@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-import Color from '../../style/color';
-import FONT from '../../style/font';
+import Color from '../style/color';
+import FONT from '../style/font';
 
-import Triangle from '../../component/triangle';
+import Triangle from '../component/triangle';
 
 // import { ReactComponent as Xicon } from '../../assets/icon/Xicon.svg';
 // import { ReactComponent as SoftSquared } from '../../assets/logo/SoftSquared.svg';
 // import { ReactComponent as DLenc } from '../../assets/logo/DLenc.svg';
-import { ReactComponent as Logo } from '../../assets/logo/Logo.svg';
+import { ReactComponent as Logo } from '../assets/logo/Logo.svg';
 
-const Banner = () => {
+const Cover = () => {
   return (
     <>
       <Container>
@@ -29,7 +29,7 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Cover;
 
 const Container = styled.div`
   width: 1688.05px;
