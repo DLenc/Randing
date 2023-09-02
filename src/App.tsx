@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 import Info1 from './page/Info/Info1';
-import Info2 from './page/Info/Info3';
+import Info2 from './page/Info/Info2';
+import Info3 from './page/Info/Info3';
 import ReviewList from './page/review/review';
-import YoutubeBox from './page/youTube/youTube';
+// import YoutubeBox from './page/youTube/youTube';
 
 function App() {
   return (
     <Container>
       <Info1 />
       <Info2 />
+      <Info3 />
       <ReviewList />
-      <YoutubeBox />
+      {/* <YoutubeBox /> */}
     </Container>
   );
 }
