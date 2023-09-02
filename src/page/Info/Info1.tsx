@@ -11,7 +11,7 @@ function Info() {
           확보하고 고성능 복합형 완충재와 상부 crack 방지용 마감몰탈의 3중구조를
           통해 차음 성능을 향상시킨 바닥구조입니다.
         </div>
-        <div style={FONT.Content}>
+        <div style={FONT.Description}>
           * 국내 최초 중량 2급 인정서 획득 & 22년 표준화 완료, 23년 9월 상용화
           예정
         </div>

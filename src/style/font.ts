@@ -31,16 +31,24 @@ const Sub: CSSProperties = {
 
 const Content: CSSProperties = {
   color: Color.subText,
-  fontSize: '24px',
+  fontSize: '21.101px',
   fontWeight: 500,
   lineHeight: 'normal'
 };
 
 const SubContent: CSSProperties = {
   color: 'white',
-  fontSize: '24px',
+  fontSize: '21.101px',
   fontWeight: 500,
   lineHeight: 'normal'
+};
+
+const Description: CSSProperties = {
+  color: Color.subText,
+  fontSize: '24.617px',
+  fontWeight: 500,
+  lineHeight: 'normal',
+  fontFamily: 'Pretendard'
 };
 
 const FONT = {
@@ -49,7 +57,8 @@ const FONT = {
   Title3,
   Sub,
   Content,
-  SubContent
+  SubContent,
+  Description
 };
 
 export default FONT;
