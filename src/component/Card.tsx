@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import Color from '../style/color';
 import FONT from '../style/font';
 
 interface CardProps {
@@ -23,14 +22,12 @@ const Card = (props: CardProps) => {
         </Img>
       </Front>
       <Back>
-        <Index>
-          <div style={{ fontSize: '36px' }}>{props.index}</div>
-          <div style={{ fontSize: '36px' }}>{props.title}</div>
-        </Index>
-        <div style={FONT.SubContent}>{props.content}</div>
-        <Img>
-          <img src='./arrow.png' alt='arrow' width={76} />
-        </Img>
+        <img
+          src='./Image/cardImage1.png'
+          alt='CardImage'
+          width={525}
+          height={676}
+        />
       </Back>
     </Container>
   );
@@ -82,16 +79,13 @@ const Front = styled.div`
 `;
 
 const Back = styled.div`
-  width: 449px;
-  height: 600px;
+  box-sizing: border-box;
 
-  padding: 38px;
+  width: 527px;
+  height: 678px;
+
   margin: 10px;
 
-  color: white;
-  background-color: ${Color.dlNavy};
-
-  border: 1px solid #d1d1d1;
   border-radius: 23px;
 
   transform: rotateY(180deg);
