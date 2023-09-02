@@ -3,16 +3,14 @@ import Info1 from './page/Info/Info1';
 import Info2 from './page/Info/Info2';
 import Info3 from './page/Info/Info3';
 import ReviewList from './page/review/review';
-// import YoutubeBox from './page/youTube/youTube';
 
 function App() {
   return (
     <Container>
+      <ReviewList />
       <Info1 />
       <Info2 />
       <Info3 />
-      <ReviewList />
-      {/* <YoutubeBox /> */}
     </Container>
   );
 }
