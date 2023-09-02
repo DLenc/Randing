@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Banner1 from './page/Banner/banner';
+import Banner1 from './page/Banner/banner1';
 import Cover from './page/cover';
 import Info1 from './page/Info/Info1';
 import Info2 from './page/Info/Info3';

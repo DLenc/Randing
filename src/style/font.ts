@@ -17,6 +17,14 @@ const Head2: CSSProperties = {
   fontFamily: 'Pretendard'
 };
 
+const Banner: CSSProperties = {
+  color: 'white',
+  fontSize: '50px',
+  fontWeight: 600,
+  lineHeight: 'normal',
+  fontFamily: 'Pretendard'
+};
+
 const Title1: CSSProperties = {
   color: Color.dlNavy,
   fontSize: '42.201px',
@@ -68,6 +76,7 @@ const SubContent: CSSProperties = {
 const FONT = {
   Head1,
   Head2,
+  Banner,
   Title1,
   Title2,
   Title3,
