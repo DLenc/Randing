@@ -32,7 +32,9 @@ const ReviewList = () => {
 };
 
 const Container = styled.div`
-  padding: 145.95px 0 146.48px 219.8px;
+  padding: 345.95px 0 146.48px 150px;
+  background-color: ${Color.backGray};
+  z-index: 1;
 `;
 
 const ReviewListContainer = styled.div`
@@ -40,6 +42,7 @@ const ReviewListContainer = styled.div`
   flex-direction: row;
 
   overflow-x: scroll;
+  overflow-y: hidden;
 
   &::-webkit-scrollbar {
     max-width: 259.362px;
@@ -82,6 +85,7 @@ const QR = styled.div`
   width: 200px;
   height: 200px;
   background-color: gray;
+  margin: 0 150px 82px 0;
 `;
 
 export default ReviewList;

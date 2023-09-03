@@ -42,6 +42,7 @@ const Container = styled.div`
   padding-top: 222.75px;
   padding-bottom: 277.3px;
   border-radius: 87.92px;
+  z-index: 1000;
 `;
 
 const Title1 = styled.div`

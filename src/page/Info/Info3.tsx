@@ -25,23 +25,20 @@ function Info() {
 }
 
 const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
-
+  height: 1230.873px;
   background: url(./background.png);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
+  padding: 209px 159px 0 148px;
 `;
 
 const Text = styled.div`
-  height: 290px;
-
-  margin: 160px;
-
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  > div {
+    margin-bottom: 39.56px;
+  }
 `;
 
 export default Info;

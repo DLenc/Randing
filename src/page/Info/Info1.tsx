@@ -24,11 +24,7 @@ function Info() {
 }
 
 const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
-
-  margin: 160px;
-
+  padding: 168px 400.78px 129.95px 149px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -46,6 +42,7 @@ const Img = styled.image`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 123.87px 0 0 420px;
 `;
 
 export default Info;
