@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Banner1 from './page/Banner/banner1';
+import Banner2 from './page/Banner/banner2';
 import Cover from './page/cover';
 import Info1 from './page/Info/Info1';
 import Info2 from './page/Info/Info2';
@@ -13,9 +14,9 @@ function App() {
       <ReviewList />
       <Banner1 />
       <Info1 />
-
       <Info2 />
       <Info3 />
+      <Banner2 />
     </Container>
   );
 }
