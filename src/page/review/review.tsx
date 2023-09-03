@@ -11,7 +11,10 @@ const ReviewList = () => {
         <HeaderTitle>
           <div style={FONT.Content}>층간소음 저감기술 체험관 경험후기</div>
           <div style={FONT.Title1}>DL이앤씨와 함께</div>
-          <div style={FONT.Title1}>만들어 나가는 층간소음 솔루션</div>
+          <div style={FONT.Title1}>
+            만들어 나가는{' '}
+            <span style={{ fontWeight: 500 }}>층간소음 솔루션</span>
+          </div>
         </HeaderTitle>
         <QR></QR>
       </Header>

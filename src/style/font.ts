@@ -28,7 +28,7 @@ const Banner: CSSProperties = {
 const Title1: CSSProperties = {
   color: Color.dlNavy,
   fontSize: '42.201px',
-  fontWeight: 500,
+  fontWeight: 400,
   lineHeight: 'normal',
   fontFamily: 'Pretendard'
 };

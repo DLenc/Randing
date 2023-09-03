@@ -54,7 +54,7 @@ const Second = () => {
   return (
     <SecondContainer>
       <Overlap>
-        <Circle type='white' text='인터넷' />
+        <Circle type='white' text='월패드' />
         <Circle type='full' text='단지서버<br/>(DL통합서버)' />
       </Overlap>
     </SecondContainer>
@@ -65,7 +65,7 @@ const Third = () => {
   return (
     <Squared>
       <Overlap>
-        <Circle type='line' text='월패드' />
+        <Circle type='line' text='인터넷' />
         <Circle type='line' text='클라우드<br/>서버' />
       </Overlap>
       <Overlap>
@@ -80,7 +80,7 @@ const Fourth = () => {
   return (
     <FourthContainer>
       <Circle type='line' text='층간소음<br/>민원 시' />
-      <Circle type='none' text='내/외부기간<br/>데이터 활용' />
+      <Circle type='none' text='내/외부기관<br/>데이터 활용' />
     </FourthContainer>
   );
 };
