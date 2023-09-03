@@ -25,7 +25,7 @@ function Info() {
 }
 
 const Container = styled.div`
-  height: 1230.873px;
+  height: 1200.873px;
   background: url(./background.png);
   background-repeat: no-repeat;
   background-position: bottom center;

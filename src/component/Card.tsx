@@ -12,12 +12,17 @@ interface CardProps {
 
 const Card = (props: CardProps) => {
   const textColor = props.index === '01' ? 'white' : Color.subText;
+
+  const titles = props.title?.split('<br/>');
+
   return (
     <Container>
       <Front index={props.index}>
         <Index>
           <div style={{ ...FONT.Title3, color: textColor }}>{props.index}</div>
-          <div style={{ ...FONT.Title3, color: textColor }}>{props.title}</div>
+          <div style={{ ...FONT.Title3, color: textColor }}>
+            {titles?.map((title, index) => <div key={index}>{title}</div>)}
+          </div>
         </Index>
         <div style={{ ...FONT.Content, color: textColor }}>{props.content}</div>
         <Arrow stroke={textColor} />
@@ -30,9 +35,6 @@ const Card = (props: CardProps) => {
 };
 
 const Container = styled.div`
-  width: 100%;
-  height: 100%;
-
   display: inline-grid;
   grid-area: 1 / 1 / 1 / 1;
 
