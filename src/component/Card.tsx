@@ -24,7 +24,9 @@ const Card = (props: CardProps) => {
             {titles?.map((title, index) => <div key={index}>{title}</div>)}
           </div>
         </Index>
-        <div style={{ ...FONT.Content, color: textColor }}>{props.content}</div>
+        <Content style={{ ...FONT.Content, color: textColor }}>
+          {props.content}
+        </Content>
         <Arrow stroke={textColor} />
       </Front>
       <Back>
@@ -54,6 +56,9 @@ const Index = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+`;
+const Content = styled.div`
+  height: 320px;
 `;
 
 const Front = styled.div<{ index?: string }>`

@@ -3,8 +3,15 @@ import Card from '../../component/Card';
 import reviewsData, { reviewProps } from '../../constants/reviewInfo';
 import Color from '../../style/color';
 import FONT from '../../style/font';
+import { useState } from 'react';
+import { GradientComponent } from '../../component/gradient';
 
 const ReviewList = () => {
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const handleRightButtonClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % reviewsData.length);
+  };
+
   return (
     <Container>
       <Header>
@@ -19,15 +26,16 @@ const ReviewList = () => {
         <QR></QR>
       </Header>
       <ReviewListContainer>
+        <GradientComponent onClick={handleRightButtonClick} />
         {reviewsData.map((review: reviewProps) => (
-          <div key={review.key}>
+          <CardContainer key={review.key} currentIndex={currentIndex}>
             <Card
               index={review.index}
               title={review.title}
               content={review.content}
               Image={review.Image}
             />
-          </div>
+          </CardContainer>
         ))}
       </ReviewListContainer>
     </Container>
@@ -43,29 +51,13 @@ const Container = styled.div`
 const ReviewListContainer = styled.div`
   display: flex;
   flex-direction: row;
+  position: relative;
+  overflow: hidden;
+`;
 
-  overflow-x: scroll;
-  overflow-y: hidden;
-
-  &::-webkit-scrollbar {
-    max-width: 259.362px;
-    height: 11.43px;
-  }
-  &::-webkit-scrollbar-track {
-    background-color: #d9d9d9;
-    border-radius: 87.919px;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: ${Color.dlNavy};
-    border-radius: 87.919px;
-  }
-  &::-webkit-scrollbar-button {
-    width: 0;
-    height: 0;
-  }
-  &::-webkit-scrollbar-corner {
-    background-color: transparent;
-  }
+const CardContainer = styled.div<{ currentIndex: number }>`
+  transform: translateX(${(props) => -props.currentIndex * 100}%);
+  transition: transform 0.3s ease;
 `;
 
 const Header = styled.div`
