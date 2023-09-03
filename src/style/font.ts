@@ -25,6 +25,22 @@ const Banner: CSSProperties = {
   fontFamily: 'Pretendard'
 };
 
+const Banner2: CSSProperties = {
+  color: 'white',
+  fontSize: '36px',
+  fontWeight: 400,
+  lineHeight: 'normal',
+  fontFamily: 'Pretendard'
+};
+
+const Banner3: CSSProperties = {
+  color: 'white',
+  fontSize: '32px',
+  fontWeight: 400,
+  lineHeight: 'normal',
+  fontFamily: 'Pretendard'
+};
+
 const Title1: CSSProperties = {
   color: Color.dlNavy,
   fontSize: '42.201px',
@@ -109,6 +125,8 @@ const FONT = {
   Head1,
   Head2,
   Banner,
+  Banner2,
+  Banner3,
   Title1,
   Title2,
   Title3,

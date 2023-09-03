@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import Banner1 from './page/Banner/banner1';
-import Cover from './page/cover';
+import Banner2 from './page/Banner/banner2';
 import Info1 from './page/Info/Info1';
 import Info2 from './page/Info/Info2';
 import Info3 from './page/Info/Info3';
+import Cover from './page/cover';
 import ReviewList from './page/review/review';
 
 function App() {
@@ -13,9 +14,9 @@ function App() {
       <ReviewList />
       <Banner1 />
       <Info1 />
-
       <Info2 />
       <Info3 />
+      <Banner2 />
     </Container>
   );
 }
