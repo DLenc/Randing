@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+import Color from '../style/color';
 import FONT from '../style/font';
+import { ReactComponent as Arrow } from '../assets/icon/Arrow.svg';
 
 interface CardProps {
   index?: string;
@@ -9,17 +11,21 @@ interface CardProps {
 }
 
 const Card = (props: CardProps) => {
+  const textColor = props.index === '01' ? 'white' : Color.subText;
+
+  const titles = props.title?.split('<br/>');
+
   return (
     <Container>
-      <Front>
+      <Front index={props.index}>
         <Index>
-          <div style={FONT.Title3}>{props.index}</div>
-          <div style={FONT.Title3}>{props.title}</div>
+          <div style={{ ...FONT.Title3, color: textColor }}>{props.index}</div>
+          <div style={{ ...FONT.Title3, color: textColor }}>
+            {titles?.map((title, index) => <div key={index}>{title}</div>)}
+          </div>
         </Index>
-        <div style={FONT.Content}>{props.content}</div>
-        <Img>
-          <img src='./arrow.png' alt='arrow' width={76} />
-        </Img>
+        <div style={{ ...FONT.Content, color: textColor }}>{props.content}</div>
+        <Arrow stroke={textColor} />
       </Front>
       <Back>
         <img src={props.Image} alt='CardImage' width={525} height={676} />
@@ -29,9 +35,6 @@ const Card = (props: CardProps) => {
 };
 
 const Container = styled.div`
-  width: 100%;
-  height: 100%;
-
   display: inline-grid;
   grid-area: 1 / 1 / 1 / 1;
 
@@ -53,13 +56,11 @@ const Index = styled.div`
   justify-content: space-between;
 `;
 
-const Img = styled.image`
-  margin-left: auto;
-`;
-
-const Front = styled.div`
+const Front = styled.div<{ index?: string }>`
   width: 449px;
   height: 600px;
+  background-color: ${(props) =>
+    props.index === '01' ? Color.dlNavy : 'white'};
 
   padding: 38px;
   margin: 10px;
@@ -71,6 +72,10 @@ const Front = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  > svg {
+    margin-left: auto;
+  }
 `;
 
 const Back = styled.div`

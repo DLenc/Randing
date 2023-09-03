@@ -11,8 +11,9 @@ function App() {
     <Container>
       <Cover />
       <ReviewList />
-      <Info1 />
       <Banner1 />
+      <Info1 />
+
       <Info2 />
       <Info3 />
     </Container>
@@ -20,8 +21,9 @@ function App() {
 }
 
 const Container = styled.div`
-  max-width: 1688.05px;
+  width: 1688px;
   margin: 0 auto;
+  overflow: hidden;
 `;
 
 export default App;

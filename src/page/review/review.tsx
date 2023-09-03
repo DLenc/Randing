@@ -11,7 +11,10 @@ const ReviewList = () => {
         <HeaderTitle>
           <div style={FONT.Content}>층간소음 저감기술 체험관 경험후기</div>
           <div style={FONT.Title1}>DL이앤씨와 함께</div>
-          <div style={FONT.Title1}>만들어 나가는 층간소음 솔루션</div>
+          <div style={FONT.Title1}>
+            만들어 나가는{' '}
+            <span style={{ fontWeight: 500 }}>층간소음 솔루션</span>
+          </div>
         </HeaderTitle>
         <QR></QR>
       </Header>
@@ -32,7 +35,9 @@ const ReviewList = () => {
 };
 
 const Container = styled.div`
-  padding: 145.95px 0 146.48px 219.8px;
+  padding: 345.95px 0 146.48px 150px;
+  background-color: ${Color.backGray};
+  z-index: 1;
 `;
 
 const ReviewListContainer = styled.div`
@@ -40,6 +45,7 @@ const ReviewListContainer = styled.div`
   flex-direction: row;
 
   overflow-x: scroll;
+  overflow-y: hidden;
 
   &::-webkit-scrollbar {
     max-width: 259.362px;
@@ -82,6 +88,7 @@ const QR = styled.div`
   width: 200px;
   height: 200px;
   background-color: gray;
+  margin: 0 150px 82px 0;
 `;
 
 export default ReviewList;

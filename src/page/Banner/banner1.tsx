@@ -15,7 +15,6 @@ const Banner1 = () => {
 export default Banner1;
 
 const Container = styled.div`
-  width: 1688px;
   padding: 140px 0 140px 0;
   background-color: ${Color.dlNavy};
   text-align: center;
