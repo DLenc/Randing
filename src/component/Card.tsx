@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import FONT from '../style/font';
 
 interface CardProps {

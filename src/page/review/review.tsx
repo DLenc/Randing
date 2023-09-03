@@ -1,4 +1,3 @@
-
 import styled from 'styled-components';
 import Card from '../../component/Card';
 import reviewsData, { reviewProps } from '../../constants/reviewInfo';
