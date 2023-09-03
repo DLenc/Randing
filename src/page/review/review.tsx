@@ -22,6 +22,7 @@ const ReviewList = () => {
               index={review.index}
               title={review.title}
               content={review.content}
+              Image={review.Image}
             />
           </div>
         ))}
