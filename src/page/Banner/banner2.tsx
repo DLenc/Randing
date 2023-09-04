@@ -43,6 +43,7 @@ const Top = styled.div`
   display: flex;
   > svg {
     margin-top: 20px;
+  }
 `;
 
 const Middle = styled.div`
@@ -60,13 +61,13 @@ const Stroke = styled.div`
   width: 491px;
   height: 5px;
   background-color: white;
-  margin-left: 55px;
+  margin-left: 45px;
   align-self: center;
 `;
 
 const Text = styled.div`
   text-align: right;
   margin-top: 20px;
-  margin-left: 26px;
+  margin-left: 15px;
   align-self: center;
 `;

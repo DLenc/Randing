@@ -10,3 +10,8 @@
   font-family: 'Pilseung';
   src: url('./Pilseung_Gothic.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./Inter-Regular.ttf') format('truetype');
+}
