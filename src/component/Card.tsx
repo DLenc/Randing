@@ -25,11 +25,10 @@ const Card = (props: CardProps) => {
             {titles?.map((title, index) => <div key={index}>{title}</div>)}
           </div>
         </Index>
-        <Content 
+        <Content
           dangerouslySetInnerHTML={{ __html: content }}
-          style={{ ...FONT.Content, color: textColor }}>
-          {props.content}
-        </Content>
+          style={{ ...FONT.Content, color: textColor }}
+        ></Content>
         <Arrow stroke={textColor} />
       </Front>
       <Back>
