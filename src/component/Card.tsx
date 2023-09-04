@@ -1,7 +1,7 @@
 import styled from 'styled-components';
+import { ReactComponent as Arrow } from '../assets/icon/Arrow.svg';
 import Color from '../style/color';
 import FONT from '../style/font';
-import { ReactComponent as Arrow } from '../assets/icon/Arrow.svg';
 
 interface CardProps {
   index?: string;
@@ -14,6 +14,7 @@ const Card = (props: CardProps) => {
   const textColor = props.index === '01' ? 'white' : Color.subText;
 
   const titles = props.title?.split('<br/>');
+  const content = props.content as string;
 
   return (
     <Container>
@@ -24,7 +25,9 @@ const Card = (props: CardProps) => {
             {titles?.map((title, index) => <div key={index}>{title}</div>)}
           </div>
         </Index>
-        <Content style={{ ...FONT.Content, color: textColor }}>
+        <Content 
+          dangerouslySetInnerHTML={{ __html: content }}
+          style={{ ...FONT.Content, color: textColor }}>
           {props.content}
         </Content>
         <Arrow stroke={textColor} />
