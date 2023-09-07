@@ -124,6 +124,13 @@ const Footer: CSSProperties = {
   fontFamily: 'Pretendard'
 };
 
+const Pilseng: CSSProperties = {
+  color: 'white',
+  fontSize: 150,
+  fontWeight: 400,
+  fontFamily: 'Pilseung'
+};
+
 const FONT = {
   Head1,
   Head2,

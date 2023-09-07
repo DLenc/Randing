@@ -8,6 +8,7 @@ interface CardProps {
   title?: string;
   content?: string;
   Image?: string;
+  url?: string;
 }
 
 const Card = (props: CardProps) => {
@@ -15,6 +16,7 @@ const Card = (props: CardProps) => {
 
   const titles = props.title?.split('<br/>');
   const content = props.content as string;
+  const url = props.url;
 
   return (
     <Container>
@@ -29,11 +31,8 @@ const Card = (props: CardProps) => {
           dangerouslySetInnerHTML={{ __html: content }}
           style={{ ...FONT.Content, color: textColor }}
         ></Content>
-        <Arrow stroke={textColor} />
+        <Arrow stroke={textColor} onClick={() => window.open(url, '_blank')} />
       </Front>
-      <Back>
-        <img src={props.Image} alt='CardImage' width={525} height={676} />
-      </Back>
     </Container>
   );
 };
@@ -45,11 +44,6 @@ const Container = styled.div`
   transform: perspective(800px) rotateY(0deg);
   transform-style: preserve-3d;
   backface-visibility: hidden;
-
-  &:hover {
-    transition: transform 1s;
-    transform: perspective(800px) rotateY(180deg);
-  }
 `;
 
 const Index = styled.div`
@@ -83,27 +77,6 @@ const Front = styled.div<{ index?: string }>`
   > svg {
     margin-left: auto;
   }
-`;
-
-const Back = styled.div`
-  box-sizing: border-box;
-
-  width: 527px;
-  height: 678px;
-
-  margin: 10px;
-
-  border-radius: 23px;
-
-  transform: rotateY(180deg);
-  grid-area: 1 / 1 / 1 / 1;
-
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 `;
 
 export default Card;
