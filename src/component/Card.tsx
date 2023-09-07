@@ -8,17 +8,23 @@ interface CardProps {
   title?: string;
   content?: string;
   Image?: string;
+  url?: string;
 }
+
+const onClickCard = () => {
+  console.log('clicked');
+};
 
 const Card = (props: CardProps) => {
   const textColor = props.index === '01' ? 'white' : Color.subText;
 
   const titles = props.title?.split('<br/>');
   const content = props.content as string;
+  const url = props.url;
 
   return (
     <Container>
-      <Front index={props.index}>
+      <Front onClick={onClickCard} index={props.index}>
         <Index>
           <div style={{ ...FONT.Title3, color: textColor }}>{props.index}</div>
           <div style={{ ...FONT.Title3, color: textColor }}>
@@ -29,10 +35,10 @@ const Card = (props: CardProps) => {
           dangerouslySetInnerHTML={{ __html: content }}
           style={{ ...FONT.Content, color: textColor }}
         ></Content>
-        <Arrow stroke={textColor} />
+        <Arrow stroke={textColor} onClick={() => window.open(url, '_blank')} />
       </Front>
       <Back>
-        <img src={props.Image} alt='CardImage' width={525} height={676} />
+        {/* <img src={props.Image} alt='CardImage' width={525} height={676} /> */}
       </Back>
     </Container>
   );
@@ -46,10 +52,10 @@ const Container = styled.div`
   transform-style: preserve-3d;
   backface-visibility: hidden;
 
-  &:hover {
-    transition: transform 1s;
-    transform: perspective(800px) rotateY(180deg);
-  }
+  // &:hover {
+  //   transition: transform 1s;
+  //   transform: perspective(800px) rotateY(180deg);
+  // }
 `;
 
 const Index = styled.div`

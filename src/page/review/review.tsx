@@ -1,10 +1,10 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import Card from '../../component/Card';
+import { GradientComponent } from '../../component/gradient';
 import reviewsData, { reviewProps } from '../../constants/reviewInfo';
 import Color from '../../style/color';
 import FONT from '../../style/font';
-import { useState } from 'react';
-import { GradientComponent } from '../../component/gradient';
 
 const ReviewList = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -23,7 +23,13 @@ const ReviewList = () => {
             <span style={{ fontWeight: 500 }}>층간소음 솔루션</span>
           </div>
         </HeaderTitle>
-        <QR></QR>
+        <QR>
+          <img
+            src={require('../../assets/image/QR.png')}
+            width={200}
+            height={200}
+          />
+        </QR>
       </Header>
       <ReviewListContainer>
         <GradientComponent onClick={handleRightButtonClick} />
@@ -34,6 +40,7 @@ const ReviewList = () => {
               title={review.title}
               content={review.content}
               Image={review.Image}
+              url={review.url}
             />
           </CardContainer>
         ))}
@@ -79,7 +86,6 @@ const HeaderTitle = styled.div`
 const QR = styled.div`
   width: 200px;
   height: 200px;
-  background-color: gray;
   margin: 0 150px 82px 0;
 `;
 
