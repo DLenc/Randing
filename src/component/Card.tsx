@@ -11,10 +11,6 @@ interface CardProps {
   url?: string;
 }
 
-const onClickCard = () => {
-  console.log('clicked');
-};
-
 const Card = (props: CardProps) => {
   const textColor = props.index === '01' ? 'white' : Color.subText;
 
@@ -24,7 +20,7 @@ const Card = (props: CardProps) => {
 
   return (
     <Container>
-      <Front onClick={onClickCard} index={props.index}>
+      <Front index={props.index}>
         <Index>
           <div style={{ ...FONT.Title3, color: textColor }}>{props.index}</div>
           <div style={{ ...FONT.Title3, color: textColor }}>
