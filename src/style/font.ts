@@ -1,6 +1,6 @@
 import { CSSProperties } from 'react';
-import Color from './color';
 import '../font/Font.css';
+import Color from './color';
 
 const Head1: CSSProperties = {
   color: 'white',
@@ -108,13 +108,6 @@ const Alert3: CSSProperties = {
   fontSize: '23.738px',
   fontWeight: 400,
   fontFamily: 'Pretendard'
-};
-
-const Pilseng: CSSProperties = {
-  color: 'white',
-  fontSize: 150,
-  fontWeight: 400,
-  fontFamily: 'Pilseung'
 };
 
 const Footer: CSSProperties = {
