@@ -117,6 +117,13 @@ const Pilseng: CSSProperties = {
   fontFamily: 'Pilseung'
 };
 
+const Footer: CSSProperties = {
+  color: Color.dlNavy,
+  fontSize: 24,
+  fontWeight: 400,
+  fontFamily: 'Pretendard'
+};
+
 const FONT = {
   Head1,
   Head2,
@@ -133,7 +140,8 @@ const FONT = {
   Alert1,
   Alert2,
   Alert3,
-  Pilseng
+  Pilseng,
+  Footer
 };
 
 export default FONT;
