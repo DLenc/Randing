@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url('./PretendardVariable.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./PretendardVariable.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pilseung';
+  src: url('./Pilseung_Gothic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./Inter-Regular.woff') format('woff');
+}
